@@ -37,3 +37,20 @@ void PrintArrau(string[] arr,string symb1, string symb2)
              Console.Write($"{arr[i]}");
     }
     Console.Write(symb2);
+
+}
+string[] ArrayStringEmptyRemuv(string[] array) // метод удаляет пустые значения из строкового массива используя динамичский массив
+{
+    // array = array.Except(new List<string> { string.Empty }).ToArray();// этот оставляет последнюю пустую строку 
+    // return array;
+    var temp = new List<string>();
+    foreach (var s in array)
+    {
+        if (!string.IsNullOrEmpty(s))
+            temp.Add(s);
+    }
+    array = temp.ToArray();
+    return array;
+}
+
+
