@@ -53,4 +53,7 @@ string[] ArrayStringEmptyRemuv(string[] array) // метод удаляет пу
     return array;
 }
 
+string[] array = ArrayStringLenth(arrString);
+string[] array1 = ArrayStringEmptyRemuv(array);
+PrintArrau(array1, "[", "]");
 
