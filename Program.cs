@@ -22,3 +22,18 @@ string[] ArrayStringLenth(string[] arrString)
     return arrStringNew;
 
 }
+
+
+void PrintArrau(string[] arr,string symb1, string symb2)
+{
+
+    Console.Write(symb1);
+   
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+       
+        else
+             Console.Write($"{arr[i]}");
+    }
+    Console.Write(symb2);
